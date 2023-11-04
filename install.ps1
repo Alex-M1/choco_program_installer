@@ -5,7 +5,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 
 # Массив с именами программ для установки
 
-$programs = @('googlechrome','firefox', 'winrar', 'webstorm', 'vscode', 'deezer', 'zoom', 'nodejs', 'volta', 'slack', 'discord', 'telegram', 'git')
+$programs = @('googlechrome','firefox', 'winrar', 'webstorm', 'vscode', 'deezer', 'zoom', 'nodejs', 'volta', 'slack', 'discord', 'telegram', 'git', 'mobaxterm')
 
 foreach ($program in $programs) {
     choco install $program -y --force
